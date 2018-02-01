@@ -29,6 +29,7 @@ public class EuJaxB extends CamelTestSupport {
         template.sendBody("direct:order", order);
 
         assertMockEndpointsSatisfied();
+        ///////////
     }
 
    
@@ -45,7 +46,7 @@ public class EuJaxB extends CamelTestSupport {
                 .to("mock:order");
            
 
-       
+      
       
 
             }
