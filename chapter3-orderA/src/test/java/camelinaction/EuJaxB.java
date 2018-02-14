@@ -27,7 +27,7 @@ public class EuJaxB extends CamelTestSupport {
         order.setAmount(1);
 
         template.sendBody("direct:order", order);
-
+        System.out.println("ase");
         assertMockEndpointsSatisfied();
     }
 
